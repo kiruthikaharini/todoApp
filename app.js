@@ -5,10 +5,7 @@ const app = express();
 const port = 3000;
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://userOne:zXnHSFN9TQ9BYTPy@todoapp.pw6ihnv.mongodb.net/?retryWrites=true&w=majority&appName=todoApp', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-});
+mongoose.connect('mongodb+srv://userOne:zXnHSFN9TQ9BYTPy@todoapp.pw6ihnv.mongodb.net/?retryWrites=true&w=majority&appName=todoApp');
 
 const taskSchema = new mongoose.Schema({
     name: String
